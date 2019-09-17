@@ -1,0 +1,25 @@
+<div class="container">
+        <div class="row">
+                <div class="col-md-7"> 
+                        <div *ngFor="let p of patients" class="panel panel-info">
+                                <div class="panel-heading">
+                                                {{p.name}} {{p.age}}
+                                                <div class="pull-right">
+                                                        <button class="btn btn-sm btn-danger" (click)="edit(p.id)">Edit</button>
+                                                        <button class="btn btn-sm btn-success" (click)="delete(p.id)">Delete</button>
+                                                </div>
+                                </div>
+                                <div class="panel-body">
+                                     <ul class="list-group">
+                                      <li class="list-group-item"> Gender : {{p.gender}} </li>
+                                      <li class="list-group-item"> Bloodgroup : {{p.profile.bloodgroup}} </li>
+                                      <li class="list-group-item"> Weight : {{p.profile.Weight}} </li>
+                                </ul> 
+                                </div>
+                        </div>                                
+                </div>
+                <div class="col-md-5 well well-sm">
+                        <app-p-add (update)="getpatients()" [selected]="selected"></app-p-add>
+                </div>
+        </div>
+</div>

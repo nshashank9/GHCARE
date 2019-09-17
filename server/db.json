@@ -1,0 +1,38 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "huwd",
+      "age": 88,
+      "gender": "k",
+      "profile": {
+        "bloodgroup": "B",
+        "Weight": "99"
+      }
+    },
+    {
+      "name": "HUK",
+      "age": 7,
+      "gender": "J",
+      "blood": "B",
+      "Weight": "76",
+      "id": 2
+    },
+    {
+      "name": "s",
+      "age": 1,
+      "gender": "m",
+      "blood": "AB",
+      "Weight": "22",
+      "id": 3
+    },
+    {
+      "name": "e",
+      "age": 2,
+      "gender": "e",
+      "blood": "O",
+      "Weight": "11",
+      "id": 4
+    }
+  ]
+}
